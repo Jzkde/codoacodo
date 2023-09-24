@@ -1,3 +1,12 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
 .logo {
   height: 10vh;
   min-height: 50px;
@@ -9,7 +18,7 @@
   background-color: grey;
   position: sticky;
   top: 0px;
-  width: 100vw;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -26,7 +35,7 @@
   position: relative;
   display: inline-block;
   text-align: center;
-  width: 100vw;
+  width: 99vw;
   filter: brightness(50%);
 }
 
@@ -82,9 +91,18 @@ u {
   border-bottom: 1px dotted #9999cc;
   text-decoration: none;
 }
-a:active{
-    color: black !important;
+a:active {
+  color: black !important;
 }
+.construccion {
+  height:70vh;
+}
+footer {
+  color: aliceblue;
+  background-color: darkslateblue;
+  padding: 15px;
+}
+
 .bor {
   border: 1px solid black;
 }
