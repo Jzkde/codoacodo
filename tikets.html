@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo</title>
+    <link rel="icon" type="image/x-icon" href="./src/codoacodo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="conteiner header">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-center ">
+                <img class="logo" src="./src/codoacodo.png" alt="logo">
+                <h1 class="me-auto">Conf en Bs As</h1>
+                <nav class="me-5">
+                    <a class="bar mx-2" href="./index.html">La conferencia</a>
+                    <a class="bar mx-2" href="./index.html#oradores">Los oradores</a>
+                    <a class="bar mx-2" href="./index.html#lugaryfecha">El lugar y la fecha</a>
+                    <a class="bar mx-2" href="./index.html#conviertete">Conviértete en orador</a>
+                    <a class="tik mx-2" href="./tikets.html">Comprar tikets</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="d-flex flex-row  justify-content-center m-4 ">
+            <div class="card text-center rounded-0 border-primary m-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center mt-4 mb-4">Estudiante</h5>
+                    <h6 class="card-subtitle mb-4 text-center secondary">Tiene un descuento</h6>
+                    <h6 class="card-subtitle mb-4 text-center secondary"><b>80%</b></h6>
+                    <p class="card-text mb-4">* presentar documentación</p>
+                </div>
+            </div>
+            <div class="card text-center rounded-0 border-success m-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title  mt-4 mb-4">Trainee</h5>
+                    <h6 class="card-subtitle mb-4 text-body-secondary">Tiene un descuento</h6>
+                    <h6 class="card-subtitle mb-4 text-body-secondary"><b>50%</b></h6>
+                    <p class="card-text mb-4">* presentar documentación</p>
+                </div>
+            </div>
+            <div class="card text-center rounded-0 border-warning m-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center mt-4 mb-4">Junior</h5>
+                    <h6 class="card-subtitle mb-4 text-body-secondary">Tiene un descuento</h6>
+                    <h6 class="card-subtitle mb-4 text-body-secondary"><b>15%</b></h6>
+                    <p class="card-text mb-4">* presentar documentación</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h6>VENTA</h6>
+            <h2>VALOR DEL TIKECT $200</h2>
+        </div>
+        <form class="formulario">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label"></label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label"></label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="correo" class="form-label"></label>
+                                <input type="email" class="form-control" id="correo" placeholder="Correo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="cantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidad" placeholder="cantidad">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="categoria" class="form-label">Categoria</label>
+                                <select class="form-select" id="categoria" aria-label="Default select example">
+                                    <option selected value="80">Estudiante</option>
+                                    <option value="50">Trainee</option>
+                                    <option value="15">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input
+                                class="form-control text-primary-emphasis bg-primary-subtle border border-primary-subtle p-3"
+                                type="text" value="Total a pagar: $" aria-label="readonly input example" id="total" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mb-4 mt-4">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-success" type="button" onclick="reset()">Borrar</button>
+                        </div>
+                        <div class="col d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-success" type="button" onclick="compra()">Resumen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col d-flex justify-content-evenly align-items-center ">
+                <nav class="me-5">
+                    <a class="bar mx-2" href="./preguntas.html">Preguntas frecuentes</a>
+                    <a class="bar mx-2" href="./contecto.html">Contáctenos</a>
+                    <a class="bar mx-2" href="./prensa.html">Prensa</a>
+                    <a class="bar mx-2" href="./conferencias.html">Conferencias</a>
+                    <a class="bar mx-2" href="./terminos.html">Términos y condiciones</a>
+                    <a class="bar mx-2" href="./privacidad.html">Privacidad</a>
+                    <a class="bar mx-2" href="./estudiantes.html">Estudiantes</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/tikets.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
