@@ -1,24 +1,23 @@
-var categoria = document.getElementById("categoria");
-var cantidad = document.getElementById("cantidad");
+let categoria = document.getElementById("categoria");
+let cantidad = document.getElementById("cantidad");
 
 function compra() {
     
-    var valorCategoria = categoria.value
+    let valorCategoria = categoria.value
     
-    var valorCantiad = cantidad.value
+    let valorCantiad = cantidad.value
     
-    var total = valorCantiad*200
+    let total = valorCantiad*200
     
-    var desc = (100-valorCategoria)*total/100
+    let desc = (100-valorCategoria)*total/100
     
-    var total = document.getElementById("total");
-    total.value = "Total a pagar: $" + desc;
+    elementoTotal = document.getElementById("total").value = "Total a pagar: $" + desc;
 }
 
 function reset() {
     
-    var formulario = document.getElementById("formulario")
+    let formulario = document.getElementById("formulario")
     formulario.reset()
-    var total = document.getElementById("total")
+    let total = document.getElementById("total")
     total.value = "Total a pagar: $"
 }
